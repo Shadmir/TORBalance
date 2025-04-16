@@ -3,7 +3,7 @@ package com.shadmir.torbalance;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.myname.mymodid.Tags;
+import com.shadmir.torbalance.Tags;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;

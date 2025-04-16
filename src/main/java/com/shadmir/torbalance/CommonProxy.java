@@ -1,6 +1,6 @@
 package com.shadmir.torbalance;
 
-import com.myname.mymodid.Tags;
+import com.shadmir.torbalance.Tags;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
