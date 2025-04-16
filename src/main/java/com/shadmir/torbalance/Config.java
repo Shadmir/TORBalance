@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.shadmir.torbalance;
 
 import java.io.File;
 

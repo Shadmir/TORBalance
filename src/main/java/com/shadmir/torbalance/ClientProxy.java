@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.shadmir.torbalance;
 
 public class ClientProxy extends CommonProxy {
 
