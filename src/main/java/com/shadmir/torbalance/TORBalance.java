@@ -32,6 +32,7 @@ public class TORBalance {
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
+        new ArmorEventHandler(); // Register the armor event handler
     }
 
     @Mod.EventHandler
