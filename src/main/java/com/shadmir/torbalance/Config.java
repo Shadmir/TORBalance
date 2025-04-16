@@ -14,8 +14,20 @@ public class Config {
         Configuration configuration = new Configuration(configFile);
 
         greeting = configuration.getString("greeting", Configuration.CATEGORY_GENERAL, greeting, "How shall I greet?");
-        protectionEnchantmentMultiplier = configuration.get(Configuration.CATEGORY_GENERAL, "protectionEnchantmentMultiplier", protectionEnchantmentMultiplier, "Multiplier for protection enchantment effectiveness.").getDouble();
-        durabilityAdjustmentFactor = configuration.get(Configuration.CATEGORY_GENERAL, "durabilityAdjustmentFactor", durabilityAdjustmentFactor, "Factor to adjust armor durability loss.").getDouble();
+        protectionEnchantmentMultiplier = configuration
+            .get(
+                Configuration.CATEGORY_GENERAL,
+                "protectionEnchantmentMultiplier",
+                protectionEnchantmentMultiplier,
+                "Multiplier for protection enchantment effectiveness.")
+            .getDouble();
+        durabilityAdjustmentFactor = configuration
+            .get(
+                Configuration.CATEGORY_GENERAL,
+                "durabilityAdjustmentFactor",
+                durabilityAdjustmentFactor,
+                "Factor to adjust armor durability loss.")
+            .getDouble();
 
         if (configuration.hasChanged()) {
             configuration.save();

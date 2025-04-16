@@ -1,16 +1,17 @@
 package com.shadmir.torbalance;
 
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.living.LivingHurtEvent;
-import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemStack;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 public class ArmorEventHandler {
 
@@ -78,8 +79,6 @@ public class ArmorEventHandler {
                     TORBalance.LOG.info("Max Durability: " + maxDurability);
                     TORBalance.LOG.info("Current Durability: " + currentDurability);
 
-
-                    
                     if (currentDurability > 0) {
                         int adjustedDamage = (int) Math.ceil(1 * durabilityLossFactor);
                         armor.setItemDamage(currentDurability - adjustedDamage);
