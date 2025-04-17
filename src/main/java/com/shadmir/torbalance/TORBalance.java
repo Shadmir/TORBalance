@@ -16,7 +16,7 @@ public class TORBalance {
     public static final String MODID = "TORBalance";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
-    @SidedProxy(clientSide = "com.shadmir.torbalance.ClientProxy", serverSide = "com.shadmir.torbalance.CommonProxy")
+    @SidedProxy(serverSide = "com.shadmir.torbalance.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler
