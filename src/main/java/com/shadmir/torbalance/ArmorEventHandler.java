@@ -76,6 +76,7 @@ public class ArmorEventHandler {
                     // Adjust durability loss rate based on maximum durability
                     double durabilityLossFactor = 1.0;
 
+                    TORBalance.LOG.info("Armor Piece: " + armor.getDisplayName());
                     TORBalance.LOG.info("Max Durability: " + maxDurability);
                     TORBalance.LOG.info("Current Durability: " + currentDurability);
 
