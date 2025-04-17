@@ -10,7 +10,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = TORBalance.MODID, version = Tags.VERSION, name = "TORBalance", acceptedMinecraftVersions = "[1.7.10]")
+@Mod(modid = TORBalance.MODID, version = Tags.VERSION, name = "TORBalance", acceptedMinecraftVersions = "*")
 public class TORBalance {
 
     public static final String MODID = "TORBalance";
